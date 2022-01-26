@@ -1,3 +1,4 @@
+import { SingleBlog } from './../blog/singBlog.entity';
 import { Quies } from './../Quies/quies.entity';
 import { TypeOrmModuleOptions } from "@nestjs/typeorm";
 import { Blogs } from "../blog/blogs.entity";
@@ -10,7 +11,8 @@ export const typeOrmConfig : TypeOrmModuleOptions = {
     entities: [
         // __dirname + 'dist/**/*.entity{.ts,.js}',
         Blogs,
-        Quies
+        Quies,
+        SingleBlog
     ],
     synchronize: true,
 }
